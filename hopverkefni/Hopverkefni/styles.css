@@ -1,0 +1,64 @@
+#stussy{
+	background-image: url("stussy.jpg");
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	animation-name: stussy;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	z-index: 1;
+}
+#inklaw{
+	background-image: url("inklaw.jpg");
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	animation-name: inklaw;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	z-index: 999;
+	animation-delay: 0s;
+	opacity: 0;
+}
+#supreme{
+	background-image: url("supremeinklaw.jpg");
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	animation-name: supreme;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	z-index: 9990;
+	opacity: 0;
+	animation-delay: 0s;
+}
+#yung{
+	background-image: url("yung.jpg");
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	z-index: 9999;
+	animation-name: yung;
+	animation-iteration-count: infinite;
+	opacity: 0;
+	animation-duration:20s;
+	animation-delay: 0s;
+}
+@keyframes stussy{
+	70% {opacity: 0;}
+}
+@keyframes inklaw{
+	40% {opacity: 1;}
+	50% {opacity: 0;}
+}
+@keyframes supreme{
+	60% {opacity: 1;}
+	70% {opacity: 0;}
+}
+
+@keyframes yung{
+	100% {opacity: 1;}
+}
+ul{
+	list-style-type: none;
+}
