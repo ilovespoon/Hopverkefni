@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tickets</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<header class="headlogo">
+	<center>
+    	<img src="Yung.svg">
+    </center>
+  </header>
+      <div class="navigation">
+          <section>
+            <a href="index.html">Home <span class="icon-home"></span></a>
+          </section>
+          <section>
+            <a href="popo">About <span class="icon-file-text"></span></a>
+          </section>
+          <section>
+            <a href="pop">Place Event <span class="icon-earth"></span></a>
+          </section>
+          <section>
+            <a href="ja.is">Contact <span class="icon-mail4"></span></a>
+          </section>
+          <section>
+            <a href="designer.html">Designers <span class="icon-hammer"></span></a>
+          </section>
+          <section>
+            <a href="tickets.html">Tickets <span class="icon-file-text"></span></a>
+          </section>
+      </div>
+<nav>
+<article>
+	<form action="index.html">
+	<fieldset>
+		<label>
+			Name
+			<input type="text" name="name" placeholder="Name" required="">
+		</label>	
+	</fieldset>
+	<fieldset>
+		<label>
+			Email
+			<input type="email" name="email">
+		</label>
+	</fieldset>
+	<fieldset>
+		<label>
+			Quantity
+			<input type="number" name="quantity" min="1" max="10">
+		</label>
+	</fieldset>
+	<fieldset>
+		<label>
+			<input type="submit" value="Submit">
+		</label>
+	</fieldset>
+	</form>
+</article>
+<aside>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+      </script>
+      <div style='overflow:hidden;height:400px;width:400px;'>
+        <div id='gmap_canvas' style='height:400px;width:400px;'></div>
+        <div>
+	<small><a href="http://www.googlemapsgenerator.com/en/">
+          <style>
+          #gmap_canvas img{max-width:none!important;background:none!important}
+          </style></a></small>
+        </div><small>
+        <script type='text/javascript'>
+        function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(64.1503943,-21.932460399999968),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(64.1503943,-21.932460399999968)});infowindow = new google.maps.InfoWindow({content:'<strong>harpan<\/strong><br>harpa<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+        </script></small>
+        <footer>
+          <small></small>
+</aside>
+</nav>
+<aside class="supremeimage">
+</aside>
+<aside class="map">
+
+</aside>
+</body>
+</html>
